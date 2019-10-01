@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDataActivity">
+
+    <TextView
+        android:id="@+id/textviewdata"
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/border"
+        android:gravity="bottom|center_horizontal"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:enabled="true"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"/>
+
+    <Button
+        android:id="@+id/clearb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewdata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="clear"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/loadb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="load"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadgb"
+        android:layout_below="@+id/loadb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="loadg"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/loadgx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadgb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="loadgx"
+        android:textSize="15dp"
+        android:onClick="GXtoString"
+        />
+
+    <Button
+        android:id="@+id/loadgy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadgx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="loadgy"
+        android:textSize="15dp"
+        android:onClick="GYtoString"
+        />
+    <Button
+        android:id="@+id/loadgz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadgy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="loadgz"
+        android:textSize="15dp"
+        android:onClick="GZtoString"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="next"
+        android:onClick="next"/>
+
+
+</RelativeLayout>
